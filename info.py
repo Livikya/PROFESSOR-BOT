@@ -30,7 +30,7 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-JOIN_CHANNELS = []
+JOIN_CHANNELS = [int(-1001896241336)]
 
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "")
